@@ -20,3 +20,6 @@
 - **APDEX 指数**：1.000 (全优)
 - **测试结论**：系统在并发压力下运行极其稳定，响应时间均处于极低延迟（20ms内）。
 
+![测试报告](https://github.com/user-attachments/assets/78c08fd4-c55b-44a5-a889-e52d824727ce)
+![测试报告](https://github.com/user-attachments/assets/28e19f27-0ad7-4834-926e-2d609c8bce4c)
+![测试报告](https://github.com/user-attachments/assets/260e4b98-3027-4430-a5fd-e39d919076f1)
