@@ -173,7 +173,7 @@ $(document).ready(function() {
     });
 
     // Creates APDEX table
-    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [1.0, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [1.0, 500, 1500, "查询文章"], "isController": false}, {"data": [1.0, 500, 1500, "调试取样器"], "isController": false}, {"data": [1.0, 500, 1500, "创建文章"], "isController": false}]}, function(index, item){
+    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [1.0, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [1.0, 500, 1500, "02_双十一结算接口"], "isController": false}, {"data": [1.0, 500, 1500, "01_登录接口"], "isController": false}]}, function(index, item){
         switch(index){
             case 0:
                 item = item.toFixed(3);
@@ -187,7 +187,7 @@ $(document).ready(function() {
     }, [[0, 0]], 3);
 
     // Create statistics table
-    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 300, 0, 0.0, 0.9733333333333339, 0, 25, 1.0, 2.0, 2.0, 2.0, 67.38544474393531, 18.95303374887691, 9.310904860175203], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["查询文章", 100, 0, 0.0, 1.2700000000000002, 1, 2, 1.0, 2.0, 2.0, 2.0, 22.71694684234439, 4.814040492957746, 3.48296938891413], "isController": false}, {"data": ["调试取样器", 100, 0, 0.0, 0.06, 0, 1, 0.0, 0.0, 1.0, 1.0, 22.76348736626451, 7.526400310152516, 0.0], "isController": false}, {"data": ["创建文章", 100, 0, 0.0, 1.5899999999999996, 1, 25, 1.0, 2.0, 2.0, 24.779999999999887, 22.46686137946529, 6.76792258762076, 5.868370520669513], "isController": false}]}, function(index, item){
+    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 1000, 0, 0.0, 0.5759999999999991, 0, 34, 1.0, 1.0, 1.0, 1.0, 55.766227972339955, 10.345070962525096, 14.268312235110418], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["02_双十一结算接口", 500, 0, 0.0, 0.523999999999999, 0, 2, 1.0, 1.0, 1.0, 1.0, 27.981420336896303, 5.599563140074991, 8.808682284962785], "isController": false}, {"data": ["01_登录接口", 500, 0, 0.0, 0.6279999999999999, 0, 34, 1.0, 1.0, 1.0, 1.0, 27.883113986169977, 4.765180612870846, 5.490577250167299], "isController": false}]}, function(index, item){
         switch(index){
             // Errors pct
             case 3:
@@ -228,7 +228,7 @@ $(document).ready(function() {
     }, [[1, 1]]);
 
         // Create top5 errors by sampler
-    createTable($("#top5ErrorsBySamplerTable"), {"supportsControllersDiscrimination": false, "overall": {"data": ["Total", 300, 0, "", "", "", "", "", "", "", "", "", ""], "isController": false}, "titles": ["Sample", "#Samples", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors"], "items": [{"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}]}, function(index, item){
+    createTable($("#top5ErrorsBySamplerTable"), {"supportsControllersDiscrimination": false, "overall": {"data": ["Total", 1000, 0, "", "", "", "", "", "", "", "", "", ""], "isController": false}, "titles": ["Sample", "#Samples", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors"], "items": [{"data": [], "isController": false}, {"data": [], "isController": false}]}, function(index, item){
         return item;
     }, [[0, 0]], 0);
 
